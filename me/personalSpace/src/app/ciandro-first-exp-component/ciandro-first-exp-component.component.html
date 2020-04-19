@@ -1,0 +1,8 @@
+<div>
+    <label>Insert a text: </label>
+    <input [(ngModel)]="inputFieldString" (keyup.enter) ="onKeyUp()"/>
+</div>
+<div>
+        <label>Here is the vocals: </label>
+        {{inputFieldString | vocalTrunc: 5}}
+</div>
